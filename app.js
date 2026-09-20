@@ -3,7 +3,6 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ── Scroll reveal ── */
   function initReveal() {
     var els = document.querySelectorAll(".reveal");
     if (reduceMotion || !("IntersectionObserver" in window)) {
@@ -24,7 +23,6 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
-  /* ── Trade chips ── */
   var TRADE_COPY = {
     roofing: {
       title: "Roofing",
@@ -85,7 +83,6 @@
     });
   }
 
-  /* ── FAQ accordion ── */
   function initFaq() {
     var items = document.querySelectorAll(".faq-item");
     items.forEach(function (item) {
@@ -106,7 +103,6 @@
     });
   }
 
-  /* ── Floating sales chat (Forge Sales handoff) ── */
   var CHAT_TRADES = ["Roofing", "Other trade"];
   var CHAT_TEAM = ["Just you", "2–5", "6–15", "15+"];
   var CHAT_INTENT = ["Founding Partner", "Book a call", "Just looking"];
@@ -173,7 +169,7 @@
 
     function addBot(text) {
       var el = document.createElement("div");
-      el.className = "chat-msg bot";
+      el.className = "chat-bubble bot";
       el.textContent = text;
       messages.appendChild(el);
       messages.scrollTop = messages.scrollHeight;
@@ -181,7 +177,7 @@
 
     function addUser(text) {
       var el = document.createElement("div");
-      el.className = "chat-msg user";
+      el.className = "chat-bubble user";
       el.textContent = text;
       messages.appendChild(el);
       messages.scrollTop = messages.scrollHeight;
@@ -374,7 +370,6 @@
     }
   }
 
-  /* ── Boot ── */
   initReveal();
   initTradeChips();
   initFaq();
