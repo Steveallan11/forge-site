@@ -20,6 +20,7 @@
     <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span>FOR<span>GE</span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#loop">How it works</a>
+      <a href="#trades">Trades</a>
       <a href="#offer">Founding offer</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -93,7 +94,7 @@
             <textarea name="notes" placeholder="How enquiries come in today is enough."></textarea>
           </label>
           <button class="btn btn-primary btn-block" type="submit">Book the demo — we’ll call you</button>
-          <p class="form-legal">We only use this to book the demo and talk about a pilot. No newsletter spray. Prefer email? Write to werroofing@gmail.com with the subject “Forge demo”.</p>
+          <p class="form-legal">We only use this to book the demo and talk about a pilot. No newsletter spray. Prefer email? Write to <a href="mailto:steveallan2018@gmail.com?subject=Forge%20demo">steveallan2018@gmail.com</a> with the subject “Forge demo”.</p>
         </form>
       </aside>
     </div>
@@ -134,6 +135,30 @@
         <article class="loop-item"><span class="loop-num">4</span><div><h3>Survey becomes a quote</h3><p>Notes and photos feed the estimate. No blank page at 9pm.</p></div></article>
         <article class="loop-item"><span class="loop-num">5</span><div><h3>Accepted quote becomes the job</h3><p>No copying lines into a new system. Variations stay on the same job.</p></div></article>
         <article class="loop-item"><span class="loop-num">6</span><div><h3>Invoice and chase</h3><p>The money step is part of the same record. Reminders do not rely on memory.</p></div></article>
+      </div>
+    </div>
+  </section>
+  <section id="trades">
+    <div class="wrap reveal">
+      <p class="section-label">Product</p>
+      <h2>Built for roofing. Ready for other trades.</h2>
+      <div class="trade-chips" role="group" aria-label="Trade examples">
+        <button type="button" class="chip-btn" data-trade="roofing" aria-pressed="true">Roofing</button>
+        <button type="button" class="chip-btn" data-trade="plumbing" aria-pressed="false">Plumbing</button>
+        <button type="button" class="chip-btn" data-trade="electrical" aria-pressed="false">Electrical</button>
+        <button type="button" class="chip-btn" data-trade="landscaping" aria-pressed="false">Landscaping</button>
+        <button type="button" class="chip-btn" data-trade="builders" aria-pressed="false">Builders</button>
+      </div>
+      <div class="split" style="margin-top:1.25rem">
+        <div id="trade-blurb" class="card">
+          <h3>Roofing</h3>
+          <p>Messy WhatsApp enquiries become survey-ready jobs. Quotes draft from your rates and past work. Follow-ups chase warm leads while you’re on the roof.</p>
+        </div>
+        <div class="card mock-panel" aria-label="Product mock">
+          <p class="panel-label">Follow-up draft</p>
+          <p id="quote-ai-copy" class="mock-copy">Just checking you got the roofing quote. Happy to tweak scope or timing if that helps — shall I hold the survey slot for next week?</p>
+          <p class="note" style="margin:0">You approve before anything goes to a customer.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -187,6 +212,8 @@
             <li>Working system around enquiry → quote → job → invoice</li>
             <li>Your pricebook and basic workflows started with you</li>
             <li>You stay in control of customer-facing and money actions</li>
+            <li>AI soft-included: quotes, Gauge chat/tools, receipts OCR, modest Whisper</li>
+            <li>Metered overage at cost × 1.5 (or packs): video surveys, bulk doc-vision, Gauge after soft cap — not unlimited video AI</li>
             <li>Monthly feedback for six months so the product fits the trade</li>
             <li>After month 12 you move to the then-current list price</li>
           </ul>
@@ -231,13 +258,34 @@
     <div class="wrap reveal">
       <p class="section-label">FAQ</p>
       <h2>Straight answers.</h2>
-      <details><summary>Is this just ChatGPT with a logo?</summary><p>No. The useful part is the connected office: customer, property, quote, job and invoice on the same record. AI drafts and prepares work inside that system. It is not a chat window parked next to your real tools.</p></details>
-      <details><summary>Will it send quotes to customers on its own?</summary><p>Only if you set that action to Automatic. The default for money and customer-facing messages is Draft or Ask me. You stay in charge.</p></details>
-      <details><summary>Do I have to rip out Checkatrade, Xero, or WhatsApp?</summary><p>No. We start with the enquiry-to-invoice loop. We connect what is worth connecting. You do not have to migrate the last ten years before you get a benefit.</p></details>
-      <details><summary>Is WhatsApp included on day one?</summary><p>The first channel we can stand up quickly is website and email enquiries. Messaging and the phone join as we connect them. The important part is the same job record underneath, so you are not building a dead-end inbox.</p></details>
-      <details><summary>How fast can we be live?</summary><p>The demo is 20 minutes. A founding partner is set up around your live work as soon as we have a place and a pricebook start. We will tell you a date on the call — not a range designed to sound clever.</p></details>
-      <details><summary>Why roofing first?</summary><p>If Forge can handle surveys, photos, weather, guarantees and high-value jobs without becoming a roofing-only dead end, it will travel to other trades. Roofing is the proving ground, not the prison.</p></details>
-      <details><summary>What do I need for the demo?</summary><p>How leads come in today, how you quote, and where evenings disappear. A recent enquiry you are happy to talk through is gold.</p></details>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">Is this just ChatGPT with a logo?</button>
+        <div class="faq-body"><p>No. The useful part is the connected office: customer, property, quote, job and invoice on the same record. AI drafts and prepares work inside that system. It is not a chat window parked next to your real tools.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">Will it send quotes to customers on its own?</button>
+        <div class="faq-body"><p>Only if you set that action to Automatic. The default for money and customer-facing messages is Draft or Ask me. You stay in charge.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">What’s included in the £249 AI usage?</button>
+        <div class="faq-body"><p>Soft-included: quotes, Gauge chat/tools, receipts OCR, and modest Whisper. Video surveys, bulk doc-vision, and Gauge after the soft cap are metered — billed at cost × 1.5 (or survey packs). Unlimited video survey AI is not included in £249.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">Do I have to rip out Checkatrade, Xero, or WhatsApp?</button>
+        <div class="faq-body"><p>No. We start with the enquiry-to-invoice loop. We connect what is worth connecting. You do not have to migrate the last ten years before you get a benefit.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">Is WhatsApp included on day one?</button>
+        <div class="faq-body"><p>The first channel we can stand up quickly is website and email enquiries. Messaging and the phone join as we connect them. The important part is the same job record underneath, so you are not building a dead-end inbox.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">How fast can we be live?</button>
+        <div class="faq-body"><p>The demo is 20 minutes. A founding partner is set up around your live work as soon as we have a place and a pricebook start. We will tell you a date on the call — not a range designed to sound clever.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-trigger" aria-expanded="false">Why roofing first?</button>
+        <div class="faq-body"><p>If Forge can handle surveys, photos, weather, guarantees and high-value jobs without becoming a roofing-only dead end, it will travel to other trades. Roofing is the proving ground, not the prison.</p></div>
+      </div>
     </div>
   </section>
   <section class="final" id="book">
@@ -246,7 +294,7 @@
       <p class="sub">Twenty minutes. One real enquiry. If it is not obviously useful, we do not pretend it is.</p>
       <div class="btns">
         <a class="btn btn-primary" href="#demo">Book the demo</a>
-        <a class="btn btn-ghost" href="mailto:werroofing@gmail.com?subject=Forge%20demo">Email us instead</a>
+        <a class="btn btn-ghost" href="mailto:steveallan2018@gmail.com?subject=Forge%20demo">Email us instead</a>
       </div>
     </div>
   </section>
@@ -257,19 +305,23 @@
     <div>UK · Roofing first</div>
   </div>
 </footer>
-<script>
-(function(){
-  if(window.matchMedia("(prefers-reduced-motion:reduce)").matches){
-    document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in")});
-    return;
-  }
-  var els=document.querySelectorAll(".reveal");
-  if(!("IntersectionObserver"in window)){els.forEach(function(el){el.classList.add("in")});return}
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})
-  },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
-  els.forEach(function(el){io.observe(el)});
-})();
-</script>
+<button type="button" id="chat-fab" class="chat-fab" aria-expanded="false" aria-controls="chat-panel" aria-label="Open sales chat">Chat</button>
+<div id="chat-panel" class="chat-panel" aria-hidden="true" role="dialog" aria-label="Forge Sales chat">
+  <div class="chat-header">
+    <strong>Forge Sales</strong>
+    <span>Assistant — not live Steve</span>
+  </div>
+  <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+  <div id="chat-options" class="chat-options"></div>
+  <div id="chat-input-row" class="chat-input-row hidden">
+    <input id="chat-input" type="text" autocomplete="off" aria-label="Your reply"/>
+    <button type="button" id="chat-send" class="btn btn-primary">Send</button>
+  </div>
+  <div id="chat-handoff" class="chat-handoff hidden">
+    <a id="chat-mailto" class="btn btn-primary btn-block" href="mailto:steveallan2018@gmail.com">Email Forge Sales</a>
+    <a class="btn btn-ghost btn-block" href="#demo">Book a call instead</a>
+  </div>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
