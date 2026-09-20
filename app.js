@@ -1,1 +1,4 @@
-PLACEHOLDER_WILL_FAIL
+(function(){
+  "use strict";
+  console.log("Forge Sales v2 boot");
+})();
