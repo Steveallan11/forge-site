@@ -1,10 +1,5 @@
-# Forge sales page — THE SECOND SHIFT
+# Forge site
 
-Production: https://forge-roofiq.vercel.app
+Cinematic sales experience. Persistent demo job: JOB 02841 / J. Smith / 17 Hawthorn Close.
 
-- `index.html` + `styles.css` + `page.js` — Option A production page
-- `thanks.html` — Blueprint received
-- `demo.html` — click-through enquiry → invoice
-
-Form posts to steve.forge.uk@gmail.com via formsubmit.co.
-Offer figures live in `window.FORGE_OFFER` inside page.js.
+Previous Option A page kept as `option-a.html`.
