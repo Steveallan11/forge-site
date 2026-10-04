@@ -20,4 +20,6 @@ The Blueprint provides its tailored result before contact fields, then posts the
 
 One deployment setting is required: configure `BLUEPRINT_WEBHOOK_URL` in the Vercel Preview and Production environments with the approved first-party CRM, automation or secure form-ingestion webhook. No private address or third-party endpoint is embedded in the public source.
 
+Before production launch, replace the footer company-information placeholder and set the canonical production origin. Preview deployments add `noindex,nofollow` in the browser when the hostname ends in `.vercel.app`.
+
 Successful submissions emit `forge:contact_form_submit` plus the matching `dataLayer` event. Delivery failures remain on the completed Blueprint and show a retryable error state.
