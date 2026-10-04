@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Forge app mark">
+  <rect width="256" height="256" rx="40" fill="#0A0C0B"/>
+  <text x="58" y="176" fill="#F1EEE7" font-size="150" font-weight="900" font-family="Arial Narrow, Roboto Condensed, sans-serif">F</text>
+  <circle cx="190" cy="174" r="18" fill="#FF5A2F"/>
+</svg>
