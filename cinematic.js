@@ -1,42 +1,26 @@
-(function () {
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var toggle = document.querySelector("[data-nav-toggle]");
-  var links = document.getElementById("nav-links");
-  if (toggle && links) {
-    toggle.addEventListener("click", function () {
-      var open = links.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-    links.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        links.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
-  var nav = document.getElementById("nav");
-  window.addEventListener("scroll", function () {
-    if (!nav) return;
-    nav.classList.toggle("solid", window.scrollY > 40);
-  }, { passive: true });
-  var notifs = document.querySelectorAll("[data-notif]");
-  var deskBg = document.querySelector("[data-desk-bg]");
-  var hero = document.getElementById("hero-copy");
-  function playOpening() {
-    if (reduce) {
-      notifs.forEach(function (n) { n.classList.add("in"); });
-      if (deskBg) deskBg.classList.add("show");
-      if (hero) hero.classList.add("rise");
-      return;
-    }
-    notifs.forEach(function (n, i) {
-      setTimeout(function () { n.classList.add("in"); }, 350 + i * 700);
-    });
-    setTimeout(function () { if (deskBg) deskBg.classList.add("show"); }, 1400);
-    setTimeout(function () { if (hero) hero.classList.add("rise"); }, 2800);
-    setTimeout(function () {
-      notifs.forEach(function (n, i) { if (i < 3) n.style.opacity = "0.35"; });
-    }, 4200);
-  }
-  playOpening();
+(function(){"use strict";
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+function track(name,detail){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:name,forge:detail||{}});document.dispatchEvent(new CustomEvent("forge:"+name,{detail:detail||{}}))}
+$$('[data-event]').forEach(function(el){el.addEventListener("click",function(){track(el.dataset.event,{label:el.textContent.trim()})})});
+var header=$('[data-header]');window.addEventListener("scroll",function(){header.classList.toggle("scrolled",window.scrollY>24)},{passive:true});
+var menu=$('[data-menu]'),mobileNav=$('[data-mobile-nav]');menu.addEventListener("click",function(){var open=menu.getAttribute("aria-expanded")==="true";menu.setAttribute("aria-expanded",String(!open));mobileNav.hidden=open});$$('a',mobileNav).forEach(function(a){a.addEventListener("click",function(){mobileNav.hidden=true;menu.setAttribute("aria-expanded","false")})});
+if(!reduce&&"IntersectionObserver"in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.55});$$('[data-time-story] li').forEach(function(x){io.observe(x)})}else{$$('[data-time-story] li').forEach(function(x){x.classList.add("in")})}
+var docket=$('[data-job-docket]'),status=$('[data-job-status]');if("IntersectionObserver"in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)docket.hidden=false})},{threshold:.15}).observe($('[data-job-zone]'));$$('[data-job-stage]').forEach(function(stage){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)status.textContent=stage.dataset.jobStage})},{threshold:.45}).observe(stage)})}
+var survey=$('[data-survey-demo]');$('.survey-connector',survey).addEventListener("click",function(){survey.classList.toggle("show-findings");track("survey_interaction",{action:"structure_findings"})});
+$$('[data-review-action]').forEach(function(b){b.addEventListener("click",function(){$$('[data-review-action]').forEach(function(x){x.classList.toggle("active",x===b)});var m={approve:"Approved findings now carry into the report and quote.",edit:"Finding opened for human correction before it moves.",remove:"Finding removed. The source capture stays attached to the job."};$('[data-review-output]').textContent=m[b.dataset.reviewAction]})});
+var attention=$('[data-attention]');$('[data-attention-trigger]').addEventListener("click",function(){attention.classList.add("collapsed");$('[data-needs]').hidden=false;this.hidden=true});
+var ai={quotes:'<table class="result-table"><thead><tr><th>QUOTE</th><th>CUSTOMER</th><th>VALUE</th><th>LAST CONTACT</th></tr></thead><tbody><tr><td>Q-02841</td><td>J. Smith</td><td>£8,200</td><td>6 days</td></tr><tr><td>Q-02798</td><td>A. Patel</td><td>£6,450</td><td>9 days</td></tr></tbody></table>',drafts:'<div class="result-ready"><div><b>2</b><h3>FOLLOW-UPS PREPARED</h3><p>Drafts are ready for your review. Nothing has been sent.</p></div></div>',invoices:'<table class="result-table"><thead><tr><th>JOB</th><th>CUSTOMER</th><th>VALUE</th><th>STATE</th></tr></thead><tbody><tr><td>JOB 02841</td><td>J. Smith</td><td>£4,840</td><td>Complete</td></tr><tr><td>JOB 02817</td><td>H. Lewis</td><td>£2,160</td><td>Complete</td></tr></tbody></table>',prepare:'<div class="result-ready"><div><b>2</b><h3>INVOICE DRAFTS PREPARED</h3><p>Evidence and completion details attached. Nothing has been sent.</p></div></div>'};
+function showAI(k){$$('[data-command]').forEach(function(b){b.classList.toggle("active",b.dataset.command===k)});$('[data-ai-result]').innerHTML=ai[k]}$$('[data-command]').forEach(function(b){b.addEventListener("click",function(){showAI(b.dataset.command)})});showAI("quotes");
+var perms={show:["SHOW ME","Surface the work.","Forge finds what matters. You decide what happens next."],suggest:["SUGGEST","Recommend the next move.","Forge proposes an action and explains why. You choose."],prepare:["PREPARE","Do the work, stop before action.","Forge drafts the reply, report or invoice. You review before it leaves."],do:["DO","Act inside your rules.","For approved low-risk actions, Forge completes the step and records what happened."]};
+$$('[data-level]').forEach(function(b){b.addEventListener("click",function(){$$('[data-level]').forEach(function(x){x.setAttribute("aria-selected",String(x===b))});var d=perms[b.dataset.level];$('[data-permission-label]').textContent=d[0];$('[data-permission-title]').textContent=d[1];$('[data-permission-copy]').textContent=d[2]})});
+var flows={roofing:["ENQUIRY","ROOF SURVEY","FINDINGS","REPORT","QUOTE","CREW","COMPLETION","INVOICE"],electrical:["CALL","SITE CHECK","TEST RESULTS","REMEDIALS","CERTIFICATE","INVOICE"],maintenance:["REQUEST","TRIAGE","SLA","ENGINEER","EVIDENCE","CLIENT SIGN-OFF","INVOICE"]};function renderTrade(k){$('[data-trade-flow]').innerHTML=flows[k].map(function(x,i){return(i?'<i>→</i>':'')+'<span>'+x+'</span>'}).join('')}$$('[data-trade]').forEach(function(b){b.addEventListener("click",function(){$$('[data-trade]').forEach(function(x){x.setAttribute("aria-selected",String(x===b))});renderTrade(b.dataset.trade)})});renderTrade("roofing");
+var bp=$('[data-blueprint]'),form=$('[data-blueprint-form]'),state={step:1,trade:"",team:"",tools:[],pain:""},next=$('[data-next]',bp),back=$('[data-back]',bp);
+function valid(){return state.step===1?!!state.trade:state.step===2?!!state.team:state.step===3?state.tools.length>0:!!state.pain}function sync(){$$('[data-step]',form).forEach(function(x){x.hidden=Number(x.dataset.step)!==state.step});$('[data-progress-fill]').style.width=state.step*25+"%";$('[data-progress-text]').textContent="QUESTION "+state.step+" OF 4";back.hidden=state.step===1;next.disabled=!valid();next.textContent=state.step===4?"Build my Blueprint":"Continue"}
+$$('[data-single] button',form).forEach(function(b){b.addEventListener("click",function(){var group=b.parentElement.dataset.single;state[group]=b.dataset.value;$$('button',b.parentElement).forEach(function(x){x.classList.toggle("selected",x===b)});sync()})});$$('[data-multi] input',form).forEach(function(i){i.addEventListener("change",function(){state.tools=$$('[data-multi] input:checked',form).map(function(x){return x.value});sync()})});
+var stepEvents=["blueprint_step_1","blueprint_step_2","blueprint_step_3","blueprint_step_4"];
+next.addEventListener("click",function(){if(!valid())return;track(stepEvents[state.step-1],{answer:state.step===1?state.trade:state.step===2?state.team:state.step===3?state.tools:state.pain});if(state.step<4){state.step++;sync();bp.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"})}else build()});back.addEventListener("click",function(){if(state.step>1){state.step--;sync()}});
+function build(){form.querySelectorAll('.blueprint-step,.blueprint-nav').forEach(function(x){x.hidden=true});$('.blueprint-progress',bp).hidden=true;var result=$('[data-blueprint-result]');result.hidden=false;var mods={Enquiries:"Enquiries · Customers · Routing",Quotes:"Surveys · Quotes · Follow-ups",Surveys:"Mobile survey · Findings · Reports",Paperwork:"Documents · Approvals · Records","Jobs & team":"Jobs · Diary · Team context","Customer updates":"Messages · Drafts · Follow-ups",Invoicing:"Completion · Invoices · Xero","Finding information":"Job context · Search · Timeline","Follow-ups":"Attention · Drafts · Tracking","Everything comes through me":"Attention · Approvals · Team context"};var ps=["Create one route from "+state.pain.toLowerCase()+" into the job.","Carry context across the "+state.team+" people who need it.","Set approval points so Forge prepares work without taking control away."];$('[data-result-title]').textContent=state.trade+" workflow · "+state.team+" people";$('[data-result-summary]').textContent="Start where "+state.pain.toLowerCase()+" creates the most owner dependency, while keeping the tools the team already knows.";$('[data-result-priorities]').innerHTML=ps.map(function(x){return"<li>"+x+"</li>"}).join("");$('[data-result-modules]').textContent=mods[state.pain];$('[data-result-tools]').textContent=state.tools.join(" · ");track("blueprint_generated",state)}
+form.addEventListener("focusin",function(e){if(e.target.matches("input[name]"))track("contact_form_start",{})},{once:true});form.addEventListener("submit",function(e){e.preventDefault();var req=$$('[required]',form),bad=req.some(function(i){return!i.checkValidity()});if(bad){req.find(function(i){return!i.checkValidity()}).reportValidity();return}$('[data-form-status]').textContent="Blueprint ready. Connect this form to your preferred enquiry endpoint before launch.";track("contact_form_submit",state)});
+if("IntersectionObserver"in window){var start=new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){track("blueprint_start",{});o.disconnect()}})},{threshold:.35});start.observe(bp)}sync();
 })();

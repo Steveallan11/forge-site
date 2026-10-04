@@ -1,13 +1,19 @@
-# Forge cinematic sales experience
+# Forge landing page
 
-Standalone story site. Persistent demo job: JOB 02841 / J. Smith / 17 Hawthorn Close / £8,200.
+Production-candidate landing page for Forge, a bespoke business operating system for trade businesses.
 
-- `index.html` — cinematic narrative
-- `css/cinematic.css`
-- `js/cinematic.js`
-- `assets/` — documentary stills
-- `thanks.html` — blueprint form confirmation
+## Run locally
 
-Form posts to steve.forge.uk@gmail.com via formsubmit.co.
+Serve the repository root with any static file server, then open `index.html`.
 
-Do not expose the design-partner business name or live customer data.
+## Structure
+
+- `index.html` — production landing-page narrative and Blueprint
+- `styles.css` — Forge brand, responsive layouts and reduced-motion behaviour
+- `cinematic.js` — cause-and-effect interactions and analytics event hooks
+- `public/` — approved brand, product, workflow, document and integration assets
+- `docs/` — authoritative positioning, copy, UX and asset specifications
+
+## Blueprint submission
+
+The Blueprint provides its tailored result before contact fields and emits `forge:contact_form_submit` plus a matching `dataLayer` event. Connect that event to the approved first-party enquiry endpoint before production launch; no private address or third-party form endpoint is embedded in the public source.
