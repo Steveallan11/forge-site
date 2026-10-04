@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1550" viewBox="0 0 1100 1550">
+ <rect width="1100" height="1550" fill="#F1EEE7"/>
+ <text x="70" y="90" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="34" font-weight="900">FORGE</text>
+ <circle cx="205" cy="80" r="7" fill="#FF5A2F"/>
+ <text x="1030" y="84" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="end">BUSINESS OPERATING SYSTEMS</text>
+ <line x1="70" y1="120" x2="1030" y2="120" stroke="#D7D0C5"/>
+ <text x="70" y="205" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="56" font-weight="850">Workmanship Warranty</text>
+ <text x="70" y="245" fill="#666B67" font-family="Arial,sans-serif" font-size="18">10 year workmanship guarantee</text>
+ 
+ <rect x="70" y="300" width="960" height="130" rx="12" fill="#E8E2D8"/>
+ <text x="95" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">CUSTOMER</text>
+ <text x="95" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">J. Smith</text>
+ <text x="95" y="397" fill="#4F5550" font-family="Arial,sans-serif" font-size="14">17 Hawthorn Close</text>
+ <text x="505" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">JOB</text>
+ <text x="505" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">02841</text>
+ <text x="760" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">DATE</text>
+ <text x="760" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">14 Apr 2026</text>
+ <text x="70" y="520" fill="#0A0C0B" font-family="Arial" font-size="22" font-weight="800">Certificate of cover</text>
+ <text x="70" y="575" fill="#4F5550" font-family="Arial" font-size="16">This certifies that the roofing works recorded under Job 02841 are covered for</text>
+ <text x="70" y="605" fill="#4F5550" font-family="Arial" font-size="16">workmanship and installation for a period of 10 years from the completion date.</text>
+ <circle cx="550" cy="930" r="150" fill="#0A0C0B"/><circle cx="550" cy="930" r="125" fill="none" stroke="#FF5A2F" stroke-width="4"/>
+ <text x="550" y="890" fill="#F1EEE7" font-family="Arial" font-size="26" font-weight="800" text-anchor="middle">FORGE.</text>
+ <text x="550" y="950" fill="#F1EEE7" font-family="Arial" font-size="72" font-weight="900" text-anchor="middle">10</text>
+ <text x="550" y="990" fill="#F1EEE7" font-family="Arial" font-size="18" font-weight="700" text-anchor="middle">YEAR GUARANTEE</text>
+
+ <line x1="70" y1="1450" x2="1030" y2="1450" stroke="#D7D0C5"/>
+ <text x="70" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12">REAL PRODUCT ARCHITECTURE · DEMO DATA</text>
+ <text x="1030" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12" text-anchor="end">JOB 02841</text>
+ </svg>
