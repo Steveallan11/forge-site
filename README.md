@@ -16,4 +16,8 @@ Serve the repository root with any static file server, then open `index.html`.
 
 ## Blueprint submission
 
-The Blueprint provides its tailored result before contact fields and emits `forge:contact_form_submit` plus a matching `dataLayer` event. Connect that event to the approved first-party enquiry endpoint before production launch; no private address or third-party form endpoint is embedded in the public source.
+The Blueprint provides its tailored result before contact fields, then posts the full Blueprint and enquiry context to `/api/blueprint`. The serverless function validates and forwards the enquiry without exposing a destination or secret in the browser.
+
+One deployment setting is required: configure `BLUEPRINT_WEBHOOK_URL` in the Vercel Preview and Production environments with the approved first-party CRM, automation or secure form-ingestion webhook. No private address or third-party endpoint is embedded in the public source.
+
+Successful submissions emit `forge:contact_form_submit` plus the matching `dataLayer` event. Delivery failures remain on the completed Blueprint and show a retryable error state.
