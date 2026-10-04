@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1550" viewBox="0 0 1100 1550">
+ <rect width="1100" height="1550" fill="#F1EEE7"/>
+ <text x="70" y="90" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="34" font-weight="900">FORGE</text>
+ <circle cx="205" cy="80" r="7" fill="#FF5A2F"/>
+ <text x="1030" y="84" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="end">BUSINESS OPERATING SYSTEMS</text>
+ <line x1="70" y1="120" x2="1030" y2="120" stroke="#D7D0C5"/>
+ <text x="70" y="205" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="56" font-weight="850">Roof Condition Report</text>
+ <text x="70" y="245" fill="#666B67" font-family="Arial,sans-serif" font-size="18">Survey findings · prepared from approved site evidence</text>
+ 
+ <rect x="70" y="300" width="960" height="130" rx="12" fill="#E8E2D8"/>
+ <text x="95" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">CUSTOMER</text>
+ <text x="95" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">J. Smith</text>
+ <text x="95" y="397" fill="#4F5550" font-family="Arial,sans-serif" font-size="14">17 Hawthorn Close</text>
+ <text x="505" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">JOB</text>
+ <text x="505" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">02841</text>
+ <text x="760" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">DATE</text>
+ <text x="760" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">14 Apr 2026</text>
+ <text x="70" y="500" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="24" font-weight="800">Executive summary</text>
+ <text x="70" y="545" fill="#4F5550" font-family="Arial,sans-serif" font-size="16">The survey identified five items requiring attention across the main roof, rear gutter,</text>
+ <text x="70" y="573" fill="#4F5550" font-family="Arial,sans-serif" font-size="16">extension flat roof and chimney. Findings below were reviewed before inclusion.</text>
+ <circle cx="92" cy="650" r="18" fill="#FF5A2F"/><text x="92" y="656" fill="#0A0C0B" font-family="Arial" font-size="12" font-weight="900" text-anchor="middle">1</text><text x="130" y="646" fill="#0A0C0B" font-family="Arial" font-size="19" font-weight="800">Damaged flashing</text><text x="130" y="677" fill="#666B67" font-family="Arial" font-size="14">Rear roof · lead flashing split and lifting</text><circle cx="92" cy="775" r="18" fill="#FF5A2F"/><text x="92" y="781" fill="#0A0C0B" font-family="Arial" font-size="12" font-weight="900" text-anchor="middle">2</text><text x="130" y="771" fill="#0A0C0B" font-family="Arial" font-size="19" font-weight="800">Cracked tile</text><text x="130" y="802" fill="#666B67" font-family="Arial" font-size="14">Main roof south · cracked tile with visible gap</text><circle cx="92" cy="900" r="18" fill="#FF5A2F"/><text x="92" y="906" fill="#0A0C0B" font-family="Arial" font-size="12" font-weight="900" text-anchor="middle">3</text><text x="130" y="896" fill="#0A0C0B" font-family="Arial" font-size="19" font-weight="800">Blocked gutter outlet</text><text x="130" y="927" fill="#666B67" font-family="Arial" font-size="14">Rear gutter · debris restricting outlet</text><circle cx="92" cy="1025" r="18" fill="#FF5A2F"/><text x="92" y="1031" fill="#0A0C0B" font-family="Arial" font-size="12" font-weight="900" text-anchor="middle">4</text><text x="130" y="1021" fill="#0A0C0B" font-family="Arial" font-size="19" font-weight="800">Flat roof wear</text><text x="130" y="1052" fill="#666B67" font-family="Arial" font-size="14">Extension roof · signs of wear and ponding</text><circle cx="92" cy="1150" r="18" fill="#FF5A2F"/><text x="92" y="1156" fill="#0A0C0B" font-family="Arial" font-size="12" font-weight="900" text-anchor="middle">5</text><text x="130" y="1146" fill="#0A0C0B" font-family="Arial" font-size="19" font-weight="800">Chimney mortar</text><text x="130" y="1177" fill="#666B67" font-family="Arial" font-size="14">Mortar missing in sections</text>
+ <rect x="70" y="1320" width="960" height="76" rx="10" fill="#0A0C0B"/>
+ <text x="95" y="1367" fill="#F1EEE7" font-family="Arial" font-size="15" font-weight="700">5 approved findings · source: survey captured 10:24 · Job 02841</text>
+ <line x1="70" y1="1450" x2="1030" y2="1450" stroke="#D7D0C5"/>
+ <text x="70" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12">REAL PRODUCT ARCHITECTURE · DEMO DATA</text>
+ <text x="1030" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12" text-anchor="end">JOB 02841</text>
+ </svg>
