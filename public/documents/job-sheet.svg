@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1550" viewBox="0 0 1100 1550">
+ <rect width="1100" height="1550" fill="#F1EEE7"/>
+ <text x="70" y="90" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="34" font-weight="900">FORGE</text>
+ <circle cx="205" cy="80" r="7" fill="#FF5A2F"/>
+ <text x="1030" y="84" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="end">BUSINESS OPERATING SYSTEMS</text>
+ <line x1="70" y1="120" x2="1030" y2="120" stroke="#D7D0C5"/>
+ <text x="70" y="205" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="56" font-weight="850">Job Sheet</text>
+ <text x="70" y="245" fill="#666B67" font-family="Arial,sans-serif" font-size="18">Site work record</text>
+ 
+ <rect x="70" y="300" width="960" height="130" rx="12" fill="#E8E2D8"/>
+ <text x="95" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">CUSTOMER</text>
+ <text x="95" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">J. Smith</text>
+ <text x="95" y="397" fill="#4F5550" font-family="Arial,sans-serif" font-size="14">17 Hawthorn Close</text>
+ <text x="505" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">JOB</text>
+ <text x="505" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">02841</text>
+ <text x="760" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">DATE</text>
+ <text x="760" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">14 Apr 2026</text>
+ <text x="70" y="500" fill="#0A0C0B" font-family="Arial" font-size="24" font-weight="800">Work scheduled</text>
+ <rect x="76" y="542" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="558" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="560" fill="#1C1E1D" font-family="Arial" font-size="15">Set up safe access and protect work area</text><line x1="70" y1="588" x2="1030" y2="588" stroke="#DDD6CC"/><rect x="76" y="614" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="630" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="632" fill="#1C1E1D" font-family="Arial" font-size="15">Renew rear lead flashing</text><line x1="70" y1="660" x2="1030" y2="660" stroke="#DDD6CC"/><rect x="76" y="686" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="702" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="704" fill="#1C1E1D" font-family="Arial" font-size="15">Replace damaged roof tiles</text><line x1="70" y1="732" x2="1030" y2="732" stroke="#DDD6CC"/><rect x="76" y="758" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="774" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="776" fill="#1C1E1D" font-family="Arial" font-size="15">Clear and repair gutter outlet</text><line x1="70" y1="804" x2="1030" y2="804" stroke="#DDD6CC"/><rect x="76" y="830" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="846" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="848" fill="#1C1E1D" font-family="Arial" font-size="15">Complete flat-roof remedial works</text><line x1="70" y1="876" x2="1030" y2="876" stroke="#DDD6CC"/><rect x="76" y="902" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="918" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="920" fill="#1C1E1D" font-family="Arial" font-size="15">Repair chimney mortar</text><line x1="70" y1="948" x2="1030" y2="948" stroke="#DDD6CC"/><rect x="76" y="974" width="22" height="22" rx="4" fill="#0A0C0B"/><text x="87" y="990" fill="#F1EEE7" font-family="Arial" font-size="14" font-weight="900" text-anchor="middle">✓</text><text x="125" y="992" fill="#1C1E1D" font-family="Arial" font-size="15">Final inspection and site clean</text><line x1="70" y1="1020" x2="1030" y2="1020" stroke="#DDD6CC"/>
+
+ <line x1="70" y1="1450" x2="1030" y2="1450" stroke="#D7D0C5"/>
+ <text x="70" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12">REAL PRODUCT ARCHITECTURE · DEMO DATA</text>
+ <text x="1030" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12" text-anchor="end">JOB 02841</text>
+ </svg>

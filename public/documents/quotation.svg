@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1550" viewBox="0 0 1100 1550">
+ <rect width="1100" height="1550" fill="#F1EEE7"/>
+ <text x="70" y="90" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="34" font-weight="900">FORGE</text>
+ <circle cx="205" cy="80" r="7" fill="#FF5A2F"/>
+ <text x="1030" y="84" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="end">BUSINESS OPERATING SYSTEMS</text>
+ <line x1="70" y1="120" x2="1030" y2="120" stroke="#D7D0C5"/>
+ <text x="70" y="205" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="56" font-weight="850">Quotation</text>
+ <text x="70" y="245" fill="#666B67" font-family="Arial,sans-serif" font-size="18">Roofing works · based on approved report scope</text>
+ 
+ <rect x="70" y="300" width="960" height="130" rx="12" fill="#E8E2D8"/>
+ <text x="95" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">CUSTOMER</text>
+ <text x="95" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">J. Smith</text>
+ <text x="95" y="397" fill="#4F5550" font-family="Arial,sans-serif" font-size="14">17 Hawthorn Close</text>
+ <text x="505" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">JOB</text>
+ <text x="505" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">02841</text>
+ <text x="760" y="338" fill="#666B67" font-family="Arial,sans-serif" font-size="12" font-weight="700">DATE</text>
+ <text x="760" y="370" fill="#0A0C0B" font-family="Arial,sans-serif" font-size="20" font-weight="800">14 Apr 2026</text>
+ <text x="70" y="500" fill="#0A0C0B" font-family="Arial" font-size="24" font-weight="800">Scope & price</text>
+ <line x1="70" y1="550" x2="1030" y2="550" stroke="#CFC8BD"/>
+ <text x="80" y="585" fill="#666B67" font-family="Arial" font-size="12" font-weight="700">DESCRIPTION</text><text x="995" y="585" fill="#666B67" font-family="Arial" font-size="12" font-weight="700" text-anchor="end">AMOUNT</text>
+ <line x1="70" y1="612" x2="1030" y2="612" stroke="#DDD6CC"/><text x="80" y="640" fill="#1C1E1D" font-family="Arial" font-size="15">Renew lead flashing and weatherproof rear abutment</text><text x="995" y="640" fill="#1C1E1D" font-family="Arial" font-size="15" font-weight="700" text-anchor="end">£1,950</text><line x1="70" y1="692" x2="1030" y2="692" stroke="#DDD6CC"/><text x="80" y="720" fill="#1C1E1D" font-family="Arial" font-size="15">Replace damaged tiles and make good surrounding area</text><text x="995" y="720" fill="#1C1E1D" font-family="Arial" font-size="15" font-weight="700" text-anchor="end">£1,180</text><line x1="70" y1="772" x2="1030" y2="772" stroke="#DDD6CC"/><text x="80" y="800" fill="#1C1E1D" font-family="Arial" font-size="15">Clear and repair rear gutter outlet</text><text x="995" y="800" fill="#1C1E1D" font-family="Arial" font-size="15" font-weight="700" text-anchor="end">£620</text><line x1="70" y1="852" x2="1030" y2="852" stroke="#DDD6CC"/><text x="80" y="880" fill="#1C1E1D" font-family="Arial" font-size="15">Flat roof remedial works</text><text x="995" y="880" fill="#1C1E1D" font-family="Arial" font-size="15" font-weight="700" text-anchor="end">£2,450</text><line x1="70" y1="932" x2="1030" y2="932" stroke="#DDD6CC"/><text x="80" y="960" fill="#1C1E1D" font-family="Arial" font-size="15">Chimney mortar repairs and local repointing</text><text x="995" y="960" fill="#1C1E1D" font-family="Arial" font-size="15" font-weight="700" text-anchor="end">£1,250</text><line x1="70" y1="1012" x2="1030" y2="1012" stroke="#DDD6CC"/><text x="80" y="1040" fill="#1C1E1D" font-family="Arial" font-size="15">Access, waste and final clean</text><text x="995" y="1040" fill="#1C1E1D" font-family="Arial" font-size="15" font-weight="700" text-anchor="end">£750</text>
+ <line x1="690" y1="1135" x2="1030" y2="1135" stroke="#CFC8BD"/>
+ <text x="710" y="1180" fill="#666B67" font-family="Arial" font-size="14">TOTAL</text><text x="995" y="1180" fill="#0A0C0B" font-family="Arial" font-size="30" font-weight="900" text-anchor="end">£8,200</text>
+ <rect x="70" y="1270" width="960" height="105" rx="10" fill="#0A0C0B"/>
+ <text x="95" y="1310" fill="#FF5A2F" font-family="Arial" font-size="12" font-weight="800">READY FOR REVIEW</text>
+ <text x="95" y="1342" fill="#F1EEE7" font-family="Arial" font-size="15">Prepared from Job 02841 survey and approved report scope. Nothing sent yet.</text>
+ <line x1="70" y1="1450" x2="1030" y2="1450" stroke="#D7D0C5"/>
+ <text x="70" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12">REAL PRODUCT ARCHITECTURE · DEMO DATA</text>
+ <text x="1030" y="1490" fill="#666B67" font-family="Arial,sans-serif" font-size="12" text-anchor="end">JOB 02841</text>
+ </svg>

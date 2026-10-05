@@ -1,0 +1,14 @@
+:root {
+  --forge-black: #0A0C0B;
+  --forge-charcoal: #151817;
+  --forge-steel: #252927;
+  --forge-bone: #F1EEE7;
+  --forge-heat: #FF5A2F;
+
+  --forge-success: #2DBE78;
+  --forge-warning: #D8A640;
+  --forge-danger: #D95050;
+
+  --forge-radius-panel: 12px;
+  --forge-radius-control: 8px;
+}
