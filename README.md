@@ -18,8 +18,8 @@ Serve the repository root with any static file server, then open `index.html`.
 
 The Blueprint provides its tailored result before contact fields, then posts the full Blueprint and enquiry context to `/api/blueprint`. The serverless function validates and forwards the enquiry without exposing a destination or secret in the browser.
 
-One deployment setting is required: configure `BLUEPRINT_WEBHOOK_URL` in the Vercel Preview and Production environments with the approved first-party CRM, automation or secure form-ingestion webhook. No private address or third-party endpoint is embedded in the public source.
+One deployment setting is required: configure `BLUEPRINT_WEBHOOK_URL` in the Vercel Preview and Production environments with the approved first-party CRM, automation or secure form-ingestion webhook. No private address or third-party endpoint is embedded in the public source. See `docs/BLUEPRINT_WEBHOOK_SETUP.md` for the exact setup and verification contract.
 
-Before production launch, replace the footer company-information placeholder and set the canonical production origin. Preview deployments add `noindex,nofollow` in the browser when the hostname ends in `.vercel.app`.
+Before production launch, set the `forge:production-origin` metadata value in `index.html` to the approved HTTPS origin. Canonical, Open Graph URL/image, and Twitter image paths are then made absolute in one place. Preview and local hosts add `noindex,nofollow` in the browser.
 
 Successful submissions emit `forge:contact_form_submit` plus the matching `dataLayer` event. Delivery failures remain on the completed Blueprint and show a retryable error state.

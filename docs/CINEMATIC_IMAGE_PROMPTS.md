@@ -1,5 +1,18 @@
 # Forge Cinematic v2 Image Prompts
 
+## Shortform v3 mobile recompositions
+
+These eight assets were generated with the built-in image-generation tool as true portrait compositions rather than crops. All use the established British trade-business documentary style: realistic UK settings, 35mm/50mm feel, natural imperfect detail, grey exterior light or warm tungsten evening light, dark industrial editorial grading, and no embedded text, logos, sci-fi UI, purple, glossy stock finish, or watermark.
+
+- `workday-1637-site-finished-mobile.webp` — a roofer at his open work van on a wet British residential street just after finishing the physical workday; the van, workwear, wet road and evening sky remain legible.
+- `workday-1714-customer-message-mobile.webp` — a tired tradesperson beside his van at dusk, looking at a phone after the physical workday, with UK street context.
+- `workday-1852-team-question-mobile.webp` — a trade-business owner at a modest British kitchen table at blue hour, phone beside an evening meal, interrupted by a team question.
+- `workday-2041-invoice-mobile.webp` — the owner alone at the same table late at night, laptop and paperwork open under a warm lamp against a dark window.
+- `trade-roofing-mobile.webp` — a British roofer inspecting an existing tiled roof under grey skies with tablet and roof context visible.
+- `trade-electrical-mobile.webp` — a British electrician working at a domestic consumer unit in an occupied UK home.
+- `trade-commercial-maintenance-mobile.webp` — a commercial maintenance engineer inspecting plant-room equipment with a tablet.
+- `forge-fits-around-business-mobile.webp` — a real workshop-office desk where phone, email, diary, calendar and accounting paperwork surround one organised central job folder, composed vertically for HTML overlays.
+
 The production images in `public/cinematic-v2/` were generated individually with the built-in image-generation tool, then converted to WebP at quality 84.
 
 ## Shared direction

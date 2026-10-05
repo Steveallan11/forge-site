@@ -60,3 +60,16 @@ Use:
 
 ## Cinematic photography
 Cinematic photography remains a separate layer from product proof. Use documentary-style UK trade photography in the physical-world sections only. Keep it realistic, restrained and consistent with the Forge palette. Do not treat generated photography as product evidence.
+
+### Shortform v3 mobile compositions
+
+- `public/cinematic-v3/workday-1637-site-finished-mobile.webp`
+- `public/cinematic-v3/workday-1714-customer-message-mobile.webp`
+- `public/cinematic-v3/workday-1852-team-question-mobile.webp`
+- `public/cinematic-v3/workday-2041-invoice-mobile.webp`
+- `public/cinematic-v3/forge-fits-around-business-mobile.webp`
+- `public/cinematic-v3/trade-roofing-mobile.webp`
+- `public/cinematic-v3/trade-electrical-mobile.webp`
+- `public/cinematic-v3/trade-commercial-maintenance-mobile.webp`
+
+These are art-directed portrait compositions, not crops of the desktop photography.
