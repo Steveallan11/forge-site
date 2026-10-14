@@ -39,3 +39,4 @@
 .blueprint-live-note{margin:.7rem 0 0;color:#aeb5af;font-size:.72rem}
 @media(max-width:760px){.blueprint-live-preview{grid-template-columns:1fr;gap:1.1rem;padding:1rem}.blueprint-live-facts{grid-template-columns:repeat(3,minmax(0,1fr))}.blueprint-live-route{grid-template-columns:repeat(4,minmax(0,1fr))}.blueprint-live-route li{min-height:46px;font-size:.56rem}.blueprint-step{min-height:0;padding:2rem 0 1rem}.choice-grid,.choice-grid-many{grid-template-columns:repeat(2,minmax(0,1fr))}.result-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.result-copy>ol,.result-meta{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.blueprint-live-route li{transition:none}}
+[hidden]{display:none!important}
