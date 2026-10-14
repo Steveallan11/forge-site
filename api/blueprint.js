@@ -15,6 +15,19 @@ function safeProviderReason(value) {
     .slice(0, 240);
 }
 
+function siteOrigin(request) {
+  const host = text(request.headers?.host, 255).toLowerCase();
+  const origin = text(request.headers?.origin, 500);
+  try {
+    const parsed = new URL(origin);
+    const isForgePreview = /^forge-cinematic(?:-[a-z0-9-]+)?\.vercel\.app$/i.test(parsed.hostname);
+    if (parsed.protocol === "https:" && parsed.host.toLowerCase() === host && isForgePreview) return parsed.origin;
+  } catch {
+    // Use the canonical production origin when the request has no trusted Forge origin.
+  }
+  return "https://forge-cinematic-phi.vercel.app";
+}
+
 module.exports = async function blueprintEndpoint(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
@@ -60,10 +73,22 @@ module.exports = async function blueprintEndpoint(request, response) {
   }
 
   try {
+    const origin = siteOrigin(request);
     const upstream = await fetch(destination, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({ ...enquiry, _subject: `New Forge Blueprint enquiry — ${enquiry.company}`, _replyto: enquiry.email, _template: "table" }),
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Origin": origin,
+        "Referer": `${origin}/`
+      },
+      body: JSON.stringify({
+        ...enquiry,
+        _subject: `New Forge Blueprint enquiry — ${enquiry.company}`,
+        _replyto: enquiry.email,
+        _template: "table",
+        _url: `${origin}/#blueprint`
+      }),
       signal: AbortSignal.timeout(8000)
     });
 
@@ -80,7 +105,11 @@ module.exports = async function blueprintEndpoint(request, response) {
       return response.status(503).json({ ok: false, error: "destination_activation_required" });
     }
     if (!upstream.ok || delivery.success === false) {
-      console.error("Blueprint destination rejected", { status: upstream.status, reason: reason || "no_provider_reason" });
+      console.error("Blueprint destination rejected", {
+        status: upstream.status,
+        contentType: upstream.headers.get("content-type") || "unknown",
+        reason: reason || "no_provider_reason"
+      });
       return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
     }
     return response.status(200).json({ ok: true });
