@@ -20,6 +20,8 @@ Forge sends JSON containing `name`, `company`, `email`, optional `phone`, `trade
 
 The destination must return an HTTP `2xx` response. Any non-`2xx` response is treated as a failed delivery and the form remains visible with a retryable error. If the variable is missing, the endpoint returns `503` with `enquiry_destination_not_configured`; no lead is silently accepted.
 
+Some email-form destinations require the recipient to activate delivery once. When the provider replies with an activation or confirmation message, the API returns `503` with `destination_activation_required` so the form can ask the visitor to retry after the recipient completes that one-time step. Check the destination inbox (including spam) for its activation email before treating the delivery path as ready.
+
 ## Verification
 
 After deployment, submit a non-customer test Blueprint and verify:

@@ -15,7 +15,7 @@ Roofing / Building / Electrical / Plumbing / Maintenance / Other
 ### 3. What currently holds things together?
 WhatsApp / Email / Xero / Spreadsheets / Calendar / CRM / Job software / Mostly me / Other
 
-### 4. Where does it hurt most?
+### 4. Where does it hurt most? (select all that apply)
 Enquiries / Quotes / Surveys / Paperwork / Jobs & team / Customer updates / Invoicing / Finding information / Follow-ups / Everything comes through me
 
 ## Live assembly

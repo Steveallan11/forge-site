@@ -61,10 +61,10 @@ module.exports = async function blueprintEndpoint(request, response) {
     });
 
     const delivery = await upstream.json().catch(() => ({}));
-    if (!upstream.ok || delivery.success === false) return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
     if (typeof delivery.message === "string" && /activate|confirm/i.test(delivery.message)) {
       return response.status(503).json({ ok: false, error: "destination_activation_required" });
     }
+    if (!upstream.ok || delivery.success === false) return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
     return response.status(200).json({ ok: true });
   } catch (error) {
     console.error("Blueprint delivery failed", error instanceof Error ? error.message : "unknown_error");
