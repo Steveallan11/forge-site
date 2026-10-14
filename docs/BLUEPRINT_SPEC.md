@@ -3,6 +3,8 @@
 ## Purpose
 The Blueprint is the primary conversion mechanism. It must provide value before requesting contact information.
 
+Present its output as an initial assessment based only on the visitor's answers, not as a full technical audit or a promise that every suggested automation is available. Make clear that the next step is an optional conversation about the real business.
+
 ## Questions
 ### 1. What trade are you in?
 Roofing / Building / Electrical / Plumbing / Maintenance / Other

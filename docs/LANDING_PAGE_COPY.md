@@ -5,6 +5,8 @@
 
 Forge builds an operating system around the way your trade business already works.
 
+Forge connects the work behind your trade business — from the first enquiry and site survey to quotes, jobs, paperwork and invoices. We map how your company works, keep the tools that work, and build the connections and automation that reduce repetitive admin.
+
 **Less admin. Less chasing. Less that depends on you.**
 
 ## Recognition

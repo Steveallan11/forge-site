@@ -30,6 +30,8 @@ Forge is not simply:
 **NOT SOFTWARE BUILT FROM ZERO.**
 **A PROVEN FOUNDATION. BUILT AROUND YOUR BUSINESS.**
 
+Forge is a tailored implementation with ongoing development and support. Scope and investment depend on the company's workflows, existing systems and requirements. Do not publish fixed package prices.
+
 ## Core customer insight
 Many trade businesses do not primarily have a software problem. They have an owner-dependency problem.
 

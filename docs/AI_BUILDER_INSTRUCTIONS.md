@@ -45,7 +45,7 @@ Avoid:
 - Use approved demo data consistently.
 - Use the locked Forge palette.
 - Use the real product to prove claims whenever possible.
-- Keep pricing at £399/month and implementation from £995 unless explicitly changed.
+- Do not publish fixed prices or standard packages. Explain that scope and investment depend on the business and its requirements.
 - Build the Blueprint as a mini-product, not a lead form.
 
 ## Final test

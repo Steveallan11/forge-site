@@ -31,7 +31,7 @@ Use case: `photorealistic-natural`. Premium British trade-business documentary p
 - `survey-findings-review`: human reviewing five structured findings with approve, edit and remove controls.
 - `survey-to-report-to-quote`: one composition moving from roof evidence to report to £8,200 quotation ready for review.
 - `attention-engine`: busy trade office noise narrowing toward four owner-required actions.
-- `ai-office`: owner using natural-language commands over real operational records, producing visible state changes.
+- `ai-office`: owner using natural-language commands over fictional illustrative demo records, showing how a configured workflow may prepare work for review.
 - `permission-control`: human hand setting different permission levels for different actions.
 - `owner-dependency`: the same business moving from owner bottleneck to shared context and a calmer finish.
 - `trade-roofing`, `trade-electrical`, `trade-commercial-maintenance`: consistent real trade environments with each operating path adapting around the work.
