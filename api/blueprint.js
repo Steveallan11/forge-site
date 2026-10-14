@@ -8,6 +8,13 @@ function list(value) {
   return Array.isArray(value) ? value.slice(0, 12).map((item) => text(item, 120)).filter(Boolean) : [];
 }
 
+function safeProviderReason(value) {
+  return text(value, 500)
+    .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "[email]")
+    .replace(/https?:\/\/\S+/gi, "[url]")
+    .slice(0, 240);
+}
+
 module.exports = async function blueprintEndpoint(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
@@ -60,11 +67,22 @@ module.exports = async function blueprintEndpoint(request, response) {
       signal: AbortSignal.timeout(8000)
     });
 
-    const delivery = await upstream.json().catch(() => ({}));
-    if (typeof delivery.message === "string" && /activate|confirm/i.test(delivery.message)) {
+    const rawDelivery = await upstream.text();
+    let delivery = {};
+    try {
+      delivery = JSON.parse(rawDelivery);
+    } catch {
+      // Do not log an unstructured provider body; it may contain submitted data.
+    }
+    const reason = safeProviderReason(delivery.message || delivery.error || delivery.code);
+    if (/activate|confirm|verif|pending/i.test(reason)) {
+      console.error("Blueprint destination requires activation", { status: upstream.status, reason });
       return response.status(503).json({ ok: false, error: "destination_activation_required" });
     }
-    if (!upstream.ok || delivery.success === false) return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
+    if (!upstream.ok || delivery.success === false) {
+      console.error("Blueprint destination rejected", { status: upstream.status, reason: reason || "no_provider_reason" });
+      return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
+    }
     return response.status(200).json({ ok: true });
   } catch (error) {
     console.error("Blueprint delivery failed", error instanceof Error ? error.message : "unknown_error");
