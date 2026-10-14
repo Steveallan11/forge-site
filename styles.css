@@ -20,3 +20,22 @@
 #approach .pricing-band{grid-template-columns:minmax(360px,1fr) 1.5fr auto;gap:1.5rem}#approach .pricing-band h2{max-width:600px;font-size:clamp(3rem,4.8vw,5rem)}#approach .pricing-band>div>p:last-child{max-width:470px;color:#b9bfba;font:400 .9rem/1.6 var(--body);letter-spacing:0}
 @media(max-width:1000px){#approach .pricing-band{grid-template-columns:1fr auto}#approach .pricing-band ol{grid-column:1/-1;grid-row:2}#approach .pricing-band h2{max-width:650px}}
 @media(max-width:700px){#approach .pricing-band{grid-template-columns:1fr}#approach .pricing-band ol{grid-column:auto;grid-row:auto}}
+
+
+/* Live, personalised Blueprint preview */
+.blueprint-live-preview{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:1.4rem;margin:1.25rem 0 0;padding:1.25rem;border:1px solid #39413b;border-radius:8px;background:linear-gradient(135deg,#141815,#0d100e)}
+.blueprint-live-copy .eyebrow{margin-bottom:.65rem}
+.blueprint-live-copy h3{margin:0 0 .55rem;font:800 clamp(1.7rem,3vw,2.6rem)/.98 var(--display);text-transform:uppercase}
+.blueprint-live-copy>p:not(.eyebrow){max-width:42ch;color:#b6bcb7;font-size:.86rem}
+.blueprint-live-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin-top:1rem}
+.blueprint-live-facts>div{min-width:0;padding:.7rem;border:1px solid #343b35;background:#0b0e0c}
+.blueprint-live-facts span,.blueprint-live-label{display:block;color:#929a93;font:500 .55rem var(--mono);letter-spacing:.06em}
+.blueprint-live-facts b{display:block;overflow-wrap:anywhere;margin-top:.35rem;color:var(--bone);font:700 .8rem/1.2 var(--display);text-transform:uppercase}
+.blueprint-live-flow{align-self:center}
+.blueprint-live-label{margin-bottom:.7rem}
+.blueprint-live-route{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.35rem;margin:0;padding:0;list-style:none}
+.blueprint-live-route li{position:relative;display:flex;align-items:center;justify-content:center;min-height:54px;padding:.35rem .25rem;border:1px solid #39413b;background:#0b0e0c;color:#aab1ab;text-align:center;font:500 .57rem/1.15 var(--mono);overflow-wrap:anywhere;transition:background .2s,border-color .2s,color .2s}
+.blueprint-live-route li.is-focus{border-color:var(--heat);background:var(--heat);color:#10120f}
+.blueprint-live-note{margin:.7rem 0 0;color:#aeb5af;font-size:.72rem}
+@media(max-width:760px){.blueprint-live-preview{grid-template-columns:1fr;gap:1.1rem;padding:1rem}.blueprint-live-facts{grid-template-columns:repeat(3,minmax(0,1fr))}.blueprint-live-route{grid-template-columns:repeat(4,minmax(0,1fr))}.blueprint-live-route li{min-height:46px;font-size:.56rem}.blueprint-step{min-height:0;padding:2rem 0 1rem}.choice-grid,.choice-grid-many{grid-template-columns:repeat(2,minmax(0,1fr))}.result-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.result-copy>ol,.result-meta{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.blueprint-live-route li{transition:none}}
