@@ -55,13 +55,14 @@ module.exports = async function blueprintEndpoint(request, response) {
   try {
     const upstream = await fetch(destination, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(enquiry),
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ ...enquiry, _subject: `New Forge Blueprint enquiry — ${enquiry.company}`, _replyto: enquiry.email, _template: "table" }),
       signal: AbortSignal.timeout(8000)
     });
 
-    if (!upstream.ok) return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
-    return response.status(200).json({ ok: true });
+    const delivery = await upstream.json().catch(() => ({}));
+    if (!upstream.ok || delivery.success === false) return response.status(502).json({ ok: false, error: "enquiry_destination_failed" });
+    return response.status(200).json({ ok: true, deliveryMessage: typeof delivery.message === "string" ? delivery.message : undefined });
   } catch (error) {
     console.error("Blueprint delivery failed", error instanceof Error ? error.message : "unknown_error");
     return response.status(502).json({ ok: false, error: "enquiry_delivery_failed" });
